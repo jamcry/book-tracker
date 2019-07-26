@@ -1,0 +1,24 @@
+.book-card {
+  margin: auto;
+  display: flex;
+  width: 550px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: whitesmoke;
+  box-shadow: 0 0 5px #111;
+}
+
+.book-cover {
+  flex: 1;
+}
+
+.book-details {
+  flex: 3;
+  text-align: left;
+}
+
+.book-progress {
+  flex: 1;
+}
