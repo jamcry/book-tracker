@@ -12,6 +12,9 @@
 
 .book-cover {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book-details {
@@ -21,4 +24,6 @@
 
 .book-progress {
   flex: 1;
+  display: flex;
+  padding: 10px;
 }
