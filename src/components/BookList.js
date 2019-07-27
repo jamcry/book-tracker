@@ -43,7 +43,7 @@ class BookList extends React.Component {
 
   render() {
     let bookCards = this.state.defaultData.map(bookData => {
-      return <BookCard data={bookData} />;
+      return <BookCard key={bookData.title} data={bookData} />;
     });
     return (
       <div className="book-list">
