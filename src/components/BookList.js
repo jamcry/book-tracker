@@ -5,6 +5,10 @@ import NewBookForm from "./NewBookForm";
 
 import "./BookList.css"
 class BookList extends React.Component {
+  constructor() {
+    super();
+    this.addNewBook = this.addNewBook.bind(this);
+  }
   state = {
     defaultData: [
       {
@@ -30,6 +34,13 @@ class BookList extends React.Component {
       }
     ]
   };
+
+  addNewBook(bookData) {
+    this.setState(prevState => ({
+      defaultData: prevState.defaultData.concat(bookData)
+    }));
+  }
+
   render() {
     let bookCards = this.state.defaultData.map(bookData => {
       return <BookCard data={bookData} />;
@@ -37,7 +48,7 @@ class BookList extends React.Component {
     return (
       <div className="book-list">
         <Popup trigger={<button className="btn">Add New Book</button>} modal>
-          <NewBookForm />
+          <NewBookForm addNewBook={this.addNewBook}/>
         </Popup>
         { bookCards }
       </div>
