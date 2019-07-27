@@ -13,3 +13,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.btn {
+  min-width: 100px;
+  background-color: #3e48cf;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #4f58ce;
+}

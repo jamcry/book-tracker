@@ -1,5 +1,8 @@
 import React from "react";
 import BookCard from "./BookCard";
+import Popup from "reactjs-popup";
+import NewBookForm from "./NewBookForm";
+
 import "./BookList.css"
 class BookList extends React.Component {
   state = {
@@ -33,6 +36,9 @@ class BookList extends React.Component {
     });
     return (
       <div className="book-list">
+        <Popup trigger={<button className="btn">Add New Book</button>} modal>
+          <NewBookForm />
+        </Popup>
         { bookCards }
       </div>
     );
