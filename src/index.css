@@ -1,5 +1,5 @@
 body {
-  margin: 25px;
+  display: flex;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -42,7 +42,6 @@ code {
   border: 1px solid #ccc;
 }
 
-
 .row {
   display: flex;
   flex-direction: row;
@@ -51,4 +50,7 @@ code {
 .col {
   display: flex;
   flex-direction: column;
+}
+
+.App {
 }

@@ -1,6 +1,6 @@
 .book-card {
+  flex: 1;
   margin: auto;
-  width: 550px;
   margin: 10px;
   border: none;
   border-radius: 5px;
@@ -14,23 +14,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: .5rem;
 }
 
 .book-details {
   flex: 3;
   text-align: left;
+  padding-left: .5rem;
 }
 
 .book-progress {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  align-content: center;
   padding: 10px;
 }
 
 .book-actions {
   flex: 1;
-  margin: 5px 15px;
+  padding: .5rem 1.8rem;
 }
 
 .book-actions .btn-edit,
