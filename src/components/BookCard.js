@@ -14,8 +14,14 @@ class BookCard extends React.Component {
   }
 
   handleDelete() {
-    if (window.confirm(`You are deleting the book "${this.props.data.title}" from your library.`))
-      this.props.actions.removeBook(this.props.data)
+    if (
+      window.confirm(
+        `You are deleting the book "${
+          this.props.data.title
+        }" from your library.`
+      )
+    )
+      this.props.actions.removeBook(this.props.data);
   }
 
   render() {
