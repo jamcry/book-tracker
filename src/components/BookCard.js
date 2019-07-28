@@ -2,6 +2,7 @@ import React from 'react';
 import BookCover from './BookCover';
 import BookDetails from './BookDetails';
 import BookProgress from './BookProgress';
+import BookActions from './BookActions';
 
 class BookCard extends React.Component {
   constructor(props) {
@@ -13,20 +14,25 @@ class BookCard extends React.Component {
   render() {
     let {title, author, pages, coverUrl, currentPages} = this.props.data;
     return (
-      <div className="book-card">
-        <BookCover
-          title={title}
-          url={coverUrl}
-        />
-        <BookDetails
-          title={title}
-          author={author}
-          pages={pages}
-        />
-        <BookProgress
-          totalPages={pages}
-          currentPages={currentPages}
-        />
+      <div className="book-card col">
+        <div className="row">
+          <BookCover
+            title={title}
+            url={coverUrl}
+          />
+          <BookDetails
+            title={title}
+            author={author}
+            pages={pages}
+          />
+          <BookProgress
+            totalPages={pages}
+            currentPages={currentPages}
+          />
+        </div>
+        <div className="row">
+          <BookActions />
+        </div>
       </div>
     );
   }

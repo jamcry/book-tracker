@@ -26,3 +26,29 @@ code {
 .btn:hover {
   background-color: #4f58ce;
 }
+
+.btn-inline {
+  min-width: 90px;
+  background: none;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.btn-inline:hover {
+  background: #444;
+  border: 1px solid #ccc;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
