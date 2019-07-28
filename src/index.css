@@ -52,5 +52,6 @@ code {
   flex-direction: column;
 }
 
-.App {
+.popup-content {
+  color: #333;
 }
