@@ -9,6 +9,7 @@ export default function BookActions(props) {
         modal
       >
         <h1>Edit Details</h1>
+        <p>This feature is coming soon.</p>
       </Popup>
 
       <button className="btn-inline btn-delete" onClick={props.handleDelete}>
@@ -17,6 +18,7 @@ export default function BookActions(props) {
 
       <Popup trigger={<button className="btn btn-update">Update</button>} modal>
         <h1>Update Progress</h1>
+        <p>This feature is coming soon.</p>
       </Popup>
     </div>
   );
