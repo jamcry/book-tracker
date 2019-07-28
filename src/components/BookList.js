@@ -8,6 +8,7 @@ class BookList extends React.Component {
   constructor() {
     super();
     this.addNewBook = this.addNewBook.bind(this);
+    this.removeBook = this.removeBook.bind(this);
   }
   state = {
     defaultData: [
@@ -41,9 +42,14 @@ class BookList extends React.Component {
     }));
   }
 
+  removeBook(bookData) {
+    this.setState(prevState => ({defaultData: prevState.defaultData.filter(book => (book !== bookData))}));
+  }
+
   render() {
+    let actions = { removeBook: this.removeBook }
     let bookCards = this.state.defaultData.map(bookData => {
-      return <BookCard key={bookData.title} data={bookData} />;
+      return <BookCard key={bookData.title} data={bookData} actions={actions}/>;
     });
     return (
       <div className="book-list">
