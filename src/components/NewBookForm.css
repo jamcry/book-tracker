@@ -1,23 +1,30 @@
 .form {
+  margin: auto;
   color: black;
   display: flex;
+  max-width: 650px;
   flex-direction: column;
   align-items: center;
 }
+
 .form label {
   display: block;
-  margin: 5px;
+  margin-top: 5px;
+  width: 100% ;
 }
+
 .form input[type="text"],
 .form input[type="number"] {
+  box-sizing: border-box;
   display: block;
-  padding: 5px;
-  height: 1.5rem;
+  padding: 10px 5px;
   border: 1px solid #888;
   border-radius: 5px;
   background-color: #eee;
   box-shadow: 0 0 5px #ccc;
   font-size: 22px;
+  width: 100%;
+  flex:1;
 }
 
 .form .btn {

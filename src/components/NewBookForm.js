@@ -27,6 +27,7 @@ export default class NewBookForm extends React.Component {
 
   render() {
     return (
+      <div className="popup-form-wrapper">
       <form className="form" onSubmit={this.handleSubmit}>
         <h1>New Book</h1>
         <label>
@@ -68,6 +69,7 @@ export default class NewBookForm extends React.Component {
         </label>
         <button className="btn">Add</button>
       </form>
+      </div>
     );
   }
 }
