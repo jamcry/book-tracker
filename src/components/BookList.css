@@ -1,3 +1,7 @@
+.book-list {
+  text-align: center;
+}
+
 .book-card {
   flex: 1;
   margin: auto;
