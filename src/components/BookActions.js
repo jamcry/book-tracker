@@ -25,7 +25,7 @@ export default function BookActions(props) {
         </button>
       </div>
 
-      <div style={{ flex: 1, textAlign: "center", padding: 10 }}>
+{/*       <div style={{ flex: 1, textAlign: "center", padding: 10 }}>
         <Popup
           trigger={<button className="btn btn-update">Update</button>}
           modal
@@ -35,7 +35,8 @@ export default function BookActions(props) {
             <p>This feature is coming soon.</p>
           </div>
         </Popup>
-      </div>
+      </div> */}
+
     </div>
   );
 }
