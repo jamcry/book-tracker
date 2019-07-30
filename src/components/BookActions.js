@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import EditBookForm from "./EditBookForm";
 
 export default function BookActions(props) {
   return (
@@ -12,8 +13,10 @@ export default function BookActions(props) {
           modal
         >
           <div className="edit-popup-content">
-            <h1>Edit Details</h1>
-            <p>This feature is coming soon.</p>
+            <EditBookForm
+              data={props.data}
+              handleUpdate={props.handleUpdate}
+            />
           </div>
         </Popup>
 

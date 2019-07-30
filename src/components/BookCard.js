@@ -11,6 +11,7 @@ class BookCard extends React.Component {
       noStateYet: true
     };
     this.handleDelete = this.handleDelete.bind(this);
+    this.handleUpdate = this.handleUpdate.bind(this);
   }
 
   handleDelete() {
@@ -24,6 +25,11 @@ class BookCard extends React.Component {
       this.props.actions.removeBook(this.props.data);
   }
 
+  handleUpdate(newBookData) {
+    const oldBookData = this.props.data;
+    this.props.actions.updateBook(oldBookData, newBookData)
+  }
+
   render() {
     let { title, author, pages, coverUrl, currentPages } = this.props.data;
     return (
@@ -34,7 +40,11 @@ class BookCard extends React.Component {
           <BookProgress totalPages={pages} currentPages={currentPages} />
         </div>
         <div className="row">
-          <BookActions handleDelete={this.handleDelete} />
+          <BookActions
+            data={this.props.data}
+            handleDelete={this.handleDelete}
+            handleUpdate={this.handleUpdate}
+          />
         </div>
       </div>
     );

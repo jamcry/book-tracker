@@ -10,6 +10,7 @@ class BookList extends React.Component {
     super();
     this.addNewBook = this.addNewBook.bind(this);
     this.removeBook = this.removeBook.bind(this);
+    this.updateBook = this.updateBook.bind(this);
     this.state = {
       bookData: null
     };
@@ -39,11 +40,21 @@ class BookList extends React.Component {
     }));
   }
 
+  updateBook(oldBookData, newBookData) {
+    this.setState(prevState => ({
+      bookData: prevState.bookData.map(book => (book === oldBookData) ? newBookData : book)
+    }))
+  }
+
   render() {
     // Updates local storage with every (re)render
     this.updateLocalStorage();
 
-    let actions = { removeBook: this.removeBook };
+    let actions = {
+      removeBook: this.removeBook,
+      updateBook: this.updateBook
+    };
+
     let bookCards = this.state.bookData.map(bookData => (
       <BookCard key={bookData.title} data={bookData} actions={actions} />
     ));
