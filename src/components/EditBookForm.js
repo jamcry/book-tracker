@@ -21,6 +21,8 @@ export default class EditBookForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.handleUpdate({ ...this.state});
+    // Click overlay div to close the popup
+    document.querySelector('.popup-overlay').click();
   }
 
   render() {

@@ -20,9 +20,11 @@ export default class NewBookForm extends React.Component {
   }
 
   handleSubmit(e) {
+    e.preventDefault();
     this.props.addNewBook({ ...this.state });
     e.target.reset();
-    e.preventDefault();
+    // Click overlay div to close the popup
+    document.querySelector('.popup-overlay').click()
   }
 
   render() {
