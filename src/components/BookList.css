@@ -32,7 +32,6 @@
 
 .book-actions {
   flex: 1;
-  padding: .5rem 1.8rem;
 }
 
 .book-actions .btn-edit,
@@ -41,5 +40,5 @@
 }
 
 .book-actions .btn-update{
-  margin-left: auto;
+  margin: auto;
 }
