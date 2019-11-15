@@ -1,3 +1,23 @@
 .Header {
+  width: 100%;
   text-align: center;
+  border-bottom: 1px solid #666;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+.Header .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.95rem;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}
+.brand-logo {
+  height: 3rem;
+}
+.slogan {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }

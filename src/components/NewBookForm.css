@@ -10,7 +10,7 @@
 .form label {
   display: block;
   margin-top: 5px;
-  width: 100% ;
+  width: 100%;
 }
 
 .form input[type="text"],
@@ -18,13 +18,13 @@
   box-sizing: border-box;
   display: block;
   padding: 10px 5px;
-  border: 1px solid #888;
+  border: 1px solid #555;
   border-radius: 5px;
-  background-color: #eee;
-  box-shadow: 0 0 5px #ccc;
+  background-color: #444;
+  color: #fff;
   font-size: 22px;
   width: 100%;
-  flex:1;
+  flex: 1;
 }
 
 .form .btn {

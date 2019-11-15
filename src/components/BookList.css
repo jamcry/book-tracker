@@ -2,10 +2,16 @@
   text-align: center;
 }
 
+@media screen and (max-width: 770px) {
+  .book-card {
+    width: 100% !important;
+  }
+}
+
 .book-card {
-  flex: 1;
-  margin: auto;
-  margin: 10px;
+  width: 576px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border: none;
   border-radius: 5px;
   background-color: #555;
@@ -18,13 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .book-details {
   flex: 3;
   text-align: left;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .book-progress {
@@ -39,10 +45,10 @@
 }
 
 .book-actions .btn-edit,
-.book-actions .btn-delete  {
+.book-actions .btn-delete {
   margin-right: 10px;
 }
 
-.book-actions .btn-update{
+.book-actions .btn-update {
   margin: auto;
 }
